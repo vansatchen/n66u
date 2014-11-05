@@ -1,0 +1,4 @@
+#!/opt/bin/bash
+
+TEMPETH2=`wl -i eth2 phy_tempsense|awk '{print $1}'`
+echo $TEMPETH2*0.5+20|bc 
